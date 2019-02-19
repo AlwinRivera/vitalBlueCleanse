@@ -1,0 +1,254 @@
+﻿html{
+    scroll-behavior:smooth;
+}
+body {
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+}
+/*CONTAINERS*/
+main div#home.jumbotron.jumbotron-fluid.text-center.mb-0{
+    padding:60px 50px;
+}
+article#about div.container-fluid.text-center, article#characters, article#quality div.container-fluid, section#sub div.container-fluid.text-center, #links div.container-fluid {
+    padding: 96px 25px;
+}
+@media screen and (max-width:2560px) and (min-width:576px) {
+    article#news div.container-fluid.text-center, article#characters, article#quality div.container-fluid, #links div.container-fluid {
+        padding: 96px;
+    }
+}
+article div.container.text-center {
+    padding: 90px 25px;
+}
+footer div.container-fluid {
+    padding: 0 25px;
+}
+
+@media screen and (max-width:2560px) and (min-width:576px) {
+    footer div.container-fluid {
+        padding: 0 72px;
+    }
+}
+.bg-grey{
+    background-color:#fafafa;
+}
+.bg-blue {
+    background-color: #2C84C1;
+    clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw) );
+    background-image: linear-gradient(0deg, #2C84C1, #4DC9D8);
+}
+.bg-blue2 {
+    background-color: #2C84C1;
+    clip-path: polygon( 0 calc(10% - 5vw), 100% 0, 100% 100%, 0 100% );
+    background-image: linear-gradient(0deg, #2C84C1, #4DC9D8);
+}
+@media screen and (max-width:2560px) and (min-width:576px) {
+    .bg-blue2 {
+        background-color: #2C84C1;
+        clip-path: polygon( 0 calc(20% - 5vw), 100% 0, 100% 100%, 0 100% );
+        background-image: linear-gradient(0deg, #2C84C1, #4DC9D8);
+    }
+}
+#alert-info-custom{
+    background-color:#2c86c7!important;
+}
+/*/CONTAINERS*/
+/*NAVBAR*/
+nav {
+    box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.15);
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: #4DC9D8!important;
+}
+nav div #navBar11 {
+    color: #828286;
+    font-weight: 700;
+}
+nav div #navBar11 a.nav-link:visited {
+    color: #828286;
+}
+nav div #navBar11 a.nav-link:hover{
+    color:#4DC9D8;
+}
+nav div #navBar11 a.nav-link:active{
+    color:#4DC9D8;
+}
+/*/NAVBAR*/
+/*HOME*/
+main {
+    overflow: hidden;
+}
+main div#home.jumbotron.jumbotron-fluid.text-center.mb-0 {
+    color: #fff;
+    background-image: url(../assets/images/mainBg.png);
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: zoomin 1.5s;
+    transition: all .5s ease-in-out;
+    overflow:hidden;
+}
+/* Zoom in Keyframes */
+@keyframes zoomin {
+    0% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/*End of Zoom in Keyframes */
+.slideanim {
+    visibility: hidden;
+}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+main #home h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+main #home h2{
+    font-size:18px;
+    font-weight:400;
+}
+main #home a.btn.btn {
+    color: #fff;
+    border:1.5px solid #4DC9D8;
+    background-color:#4DC9D8;
+    font-weight:500;
+    border-radius:40px;
+}
+main #home a.btn.btn:hover{
+    border:1.5px solid #3fa1ad;
+    background-color:#41a8b5;
+}
+/*/HOME*/
+/*ABOUT*/
+article div.container.text-center{
+    color:#828286;
+}
+article div.container-fluid.text-center header h3{
+    font-size:32px;
+    font-weight:600;
+}
+article div.container-fluid.text-center header h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+#about div div.row div.col-sm-4.col-md-4.col-lg-4 h3.text-left {
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+}
+#about div div.row div.col-sm-4.col-md-4.col-lg-4 h3.text-left span{
+    color:#63eeff;
+}
+#about a.btn.btn-info {
+    border-radius: 40px;
+}
+/*/ABOUT*/
+/*CHARACTERS*/
+article#characters{
+    color:#828286!important;
+}
+article#characters header h3.text-center, #articles div.container div.row.mb-5 div.col-md-8 h4{
+    font-size: 32px;
+    font-weight: 600;
+}
+#characters div div div.col-lg-6 a img.mx-auto.d-block.mb-3{
+    width:100%;
+    height:110px;
+}
+/*/CHARACTERS*/
+/*QUALITY*/
+@media screen and (max-width:2560px) and (min-width:576px) {
+    #quality div div div ul{
+        font-size:25px;
+    }
+}
+#quality a.btn.btn-info {
+    border-radius: 40px;
+}
+/*/QUALITY*/
+/*SUBSCRIPTION*/
+section#sub div.container-fluid.text-center {
+    color:#fff;
+    background-image: url(../assets/images/mainBg.png);
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section#sub div.container-fluid.text-center header h3{
+    font-size:32px;
+    font-weight:600;
+}
+section#sub div.container-fluid.text-center header h4{
+    font-size:16px;
+    font-weight:400;
+}
+@media screen and (max-width:2560px) and (min-width:576px) {
+    .input-group {
+        width: 28rem!important;
+    }
+}
+/*/SUBSCRIPTION*/
+/*LINKS*/
+#links {
+    background-color: #494949;
+}
+#links div.container-fluid{
+    color:#fff;
+}
+#links div section div.row div.col-md-4 h4{
+    font-weight:700;
+}
+section#links div section div div ul li a:hover {
+    color: #448aff !important;
+}
+@media screen and (max-width:759px) and (min-width:368px) {
+    #links div section div.row div.col-md-1{
+        width:5em;
+    }
+}
+/*/LINKS*/
+/*FOOTER*/
+footer div.container-fluid{
+    background-color:#333;
+}
+footer div.container-fluid div.row {
+    height: 117px;
+    padding: 16px 0;
+}
+footer div div div i.fa {
+    font-size: 20px;
+}
+@media screen and (max-width:2560px) and (min-width:992px) {
+    footer div.container-fluid div.row {
+        height: 52px;
+        padding: 16px 0;
+    }
+}
+/*/FOOTER*/
