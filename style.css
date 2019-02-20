@@ -15,11 +15,11 @@ body {
 main div#home.jumbotron.jumbotron-fluid.text-center.mb-0{
     padding:60px 50px;
 }
-article#about div.container-fluid.text-center, article#characters, article#quality div.container-fluid, #reviews, section#ingredients div.container.text-center, section#stories div.container-fluid,  section#sub div.container-fluid.text-center, #links div.container-fluid {
+article#about div.container-fluid.text-center, article#characters, article#quality div.container-fluid, div#testimonialsContainer.container-fluid, section#ingredients div.container.text-center, section#stories div.container-fluid,  section#sub div.container-fluid.text-center, #links div.container-fluid {
     padding: 96px 25px;
 }
 @media screen and (max-width:2560px) and (min-width:576px) {
-    article#news div.container-fluid.text-center, article#characters, article#quality div.container-fluid, #reviews, section#stories div.container-fluid, section#ingredients div.container.text-center, #links div.container-fluid {
+    article#news div.container-fluid.text-center, article#characters, article#quality div.container-fluid, div#testimonialsContainer.container-fluid, section#stories div.container-fluid, section#ingredients div.container.text-center, #links div.container-fluid {
         padding: 96px;
     }
 }
@@ -92,7 +92,7 @@ main {
 }
 main div#home.jumbotron.jumbotron-fluid.text-center.mb-0 {
     color: #fff;
-    background-image: url(../assets/images/mainBg.jpg);
+    background-image: url(../assets/images/mainBg.png);
     height: auto;
     background-attachment: fixed;
     background-position: center;
@@ -204,7 +204,74 @@ article#characters header h3.text-center, #articles div.container div.row.mb-5 d
     border-radius: 40px;
 }
 /*/QUALITY*/
-/*REVIEWS*/
+/*TESTIMONIALS*/
+div#testimonialsContainer.container-fluid {
+    background-color: #fff;
+}
+
+    div#testimonialsContainer.container-fluid h2.text-center b {
+        color: #204c8b;
+        font-weight: bold;
+    }
+
+.container-fluid .card {
+    margin: 0 auto;
+}
+
+    .container-fluid .card .carousel-item {
+        height: 200px;
+    }
+
+@media screen and (max-width:425px) {
+    .container-fluid .card .carousel-item {
+        height: 420px;
+        margin-top: 1em;
+    }
+}
+
+.container-fluid .card .carousel-caption {
+    padding: 0;
+    right: 0;
+    left: 0;
+    color: #212529;
+}
+
+    .container-fluid .card .carousel-caption h3 {
+        color: #212529;
+    }
+
+    .container-fluid .card .carousel-caption p {
+        line-height: 30px;
+    }
+
+    .container-fluid .card .carousel-caption .col-sm-3 {
+        display: flex;
+        align-items: center;
+    }
+
+    .container-fluid .card .carousel-caption .col-sm-9 {
+        text-align: left;
+    }
+
+.container-fluid .card .carousel-control-prev, .card .carousel-control-next {
+    z-index: 10;
+    color: #212529 !important;
+    opacity: 0.2 !important;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #fff;
+    border-radius: .25rem;
+}
+/*/TESTIMONIALS*/
 /*.content {
   margin: auto;
   padding: 20px;
